@@ -3,13 +3,15 @@ function Home() {
     <section className=" w-full  ">
       <h1 className="head_text text-center">
         Discover & Share
-        <br className="max-md:hidden" />
+        <br />
         <span className="orange_gradient text-center"> AI Powered Prompts</span>
       </h1>
       <p className="description text-center">
-        prompHelper is an open-source AI helping tool to create, discover &
+        PrompHelper is an open-source AI helping tool to create, discover &
         share creative prompts
       </p>
+
+      {/* feed */}
     </section>
   );
 }

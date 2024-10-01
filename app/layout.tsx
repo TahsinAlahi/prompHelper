@@ -1,8 +1,10 @@
-import "@styles/global.css";
 import React from "react";
 
+import Nav from "@components/Nav";
+import "@styles/global.css";
+
 export const metadata = {
-  title: "prompHelper",
+  title: "PrompHelper",
   description: "Learn new prompt to enhance your ai command skill",
 };
 
@@ -19,6 +21,7 @@ export default function RootLayout({
         </div>
 
         <main className="app">
+          <Nav />
           {children}
         </main>
       </body>
