@@ -11,6 +11,7 @@
   justify-content: center;
   position: fixed;
   pointer-events: none;
+  padding: 120px 24px 160px 24px;
 }
 
 .root-background::before {
@@ -57,4 +58,20 @@
   filter: blur(100px) saturate(150%);
   top: 80px;
   opacity: 0.15;
+}
+
+.app {
+  @apply relative z-10 flex items-center justify-center max-w-7xl mx-auto sm:px-16 px-8;
+}
+
+.head_text {
+  @apply font-extrabold leading-tight text-5xl sm:text-6xl text-black mt-5;
+}
+
+.orange_gradient {
+  @apply bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 text-transparent bg-clip-text;
+}
+
+.description {
+  @apply mt-5 text-lg sm:text-xl max-w-2xl mx-auto text-gray-600;
 }

@@ -3,7 +3,7 @@ import React from "react";
 
 export const metadata = {
   title: "prompHelper",
-  description: "Learn new prompt to enhance your ai command skilll",
+  description: "Learn new prompt to enhance your ai command skill",
 };
 
 export default function RootLayout({
@@ -18,7 +18,9 @@ export default function RootLayout({
           <div className="gradient" />
         </div>
 
-        <main className="app">{children}</main>
+        <main className="app">
+          {children}
+        </main>
       </body>
     </html>
   );
