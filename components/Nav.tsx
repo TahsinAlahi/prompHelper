@@ -5,6 +5,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { getProviders, signIn, signOut } from "next-auth/react";
 
+// interface res
+
 function Nav() {
   // i don't know what type it will be
   const [providers, setProviders] = useState<unknown>();
@@ -16,7 +18,6 @@ function Nav() {
     async function getProviderData() {
       const response = await getProviders();
       setProviders(response);
-      console.log(response);
     }
     getProviderData();
   }, []);
@@ -110,7 +111,6 @@ function Nav() {
                     signOut();
                   }}
                 >
-                  {" "}
                   Sign Out
                 </button>
               </div>
